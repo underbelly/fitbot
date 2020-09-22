@@ -97,7 +97,8 @@ controller.ready(() => {
 });
 
 controller.webserver.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, '/www/index.html'))
+  console.log('hi');
+  res.sendFile(path.join(__dirname, '/public/index.html'))
   // controller.use(express)
   // res.send(`This app is running Botkit ${controller.version}.`);
 });
